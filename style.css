@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.toanbo{
+  width: auto;
+  background-color:#a81c1c ;
+  margin: auto;
+}
+.logo {
+  height: 120px;
+  width: auto;
+  display: block;
+  padding: 10px 100px;
+  
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+nav{
+  height: 35px ;
+}
+nav ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  
+  
+}
+
+nav ul li {
+  flex: 1; /* mỗi mục chiếm phần bằng nhau */
+  text-align: center;
+  position: relative;
+}
+
+nav ul a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  line-height: 35px;
+  padding: 0 10px;
+  width: 100%; /* chiếm toàn bộ chiều ngang li */
+}
+nav a{
+  margin: 0 30px;
+  flex-wrap: nowrap;
+}
+nav ul a:hover{
+  background-color: chocolate;
+  color: white;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* đặt ngay dưới thẻ cha */
+  left: 0;
+  background-color: white;
+  min-width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+.submenu li a {
+  color: black;
+  padding: 10px;
+  display: block;
+  text-align: left;
+}
+
+.submenu li a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Hiện submenu khi hover */
+nav ul li:hover .submenu {
+  display: block;
+}
+
+/*Phải sử dụng product-list nth child*/
