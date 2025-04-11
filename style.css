@@ -2,20 +2,20 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
 
 }
 .toanbo{
   width: auto;
   background-color:#a81c1c ;
-  margin: auto;
+  
 }
 
 .logo {
   height: 80px;  
   display: block;
-  margin-bottom: -20px;
-
+  margin-bottom: -25px;
+ 
  
 }
 
@@ -23,16 +23,16 @@ header {
   display: flex;
   align-items: flex-end;      
   justify-content: flex-start;
-  height: 70px;
-  padding-left: 200px;
+  height: 80px;
+  padding: 0 200px;
   background-color: #a81c1c;
-  position: relative;
-  
+  gap: 100px;
 }
 
 nav{
   height: 35px ;
   display: flex;
+  padding-left:30px ;
   justify-content: center;
   background-color: #a81c1c;
 }
@@ -41,7 +41,8 @@ nav ul{
   padding: 0px;
   margin: 0px;
   display: flex;
-
+  padding-left: 150px;
+  gap: 10px;
 }
 
 nav ul li {
@@ -57,6 +58,7 @@ nav ul a {
   display: block;
   line-height: 35px;
   padding: 0 10px;
+  font-family: 'Inter', sans-serif;
 }
 
 nav ul a:hover{
