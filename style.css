@@ -34,8 +34,6 @@ nav ul{
   display: flex;
   gap: 10px;
   justify-content: center;
-  
-  
 }
 
 nav ul li {
@@ -45,9 +43,10 @@ nav ul li {
 }
 
 nav ul a {
-  color: blue;
+  color: whitesmoke;
   font-weight: bold;
   text-decoration: none;
+  font-size: 14px;
   display: block;
   line-height: 35px;
   padding: 0 10px;
