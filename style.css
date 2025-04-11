@@ -10,34 +10,41 @@
   background-color:#a81c1c ;
   margin: auto;
 }
+
 .logo {
-  height: 120px;
-  width: auto;
+  height: 80px;  
   display: block;
-  padding: 10px 100px;
-  
+  margin-bottom: -20px;
+
+ 
 }
-.header {
+
+header {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-end;      
+  justify-content: flex-start;
+  height: 70px;
+  padding-left: 200px;
+  background-color: #a81c1c;
+  position: relative;
   
 }
 
 nav{
   height: 35px ;
+  display: flex;
+  justify-content: center;
+  background-color: #a81c1c;
 }
 nav ul{
   list-style-type: none;
   padding: 0px;
   margin: 0px;
   display: flex;
-  gap: 10px;
-  justify-content: center;
+  gap: 0px;
 }
 
 nav ul li {
-  flex: 1; /* mỗi mục chiếm phần bằng nhau */
   text-align: center;
   position: relative;
 }
@@ -50,12 +57,8 @@ nav ul a {
   display: block;
   line-height: 35px;
   padding: 0 10px;
-  width: 100%; /* chiếm toàn bộ chiều ngang li */
 }
-nav a{
-  margin: 0 30px;
-  flex-wrap: nowrap;
-}
+
 nav ul a:hover{
   background-color: chocolate;
   color: white;
@@ -81,7 +84,7 @@ nav ul a:hover{
   background-color: #f2f2f2;
 }
 
-/* Hiện submenu khi hover */
+
 nav ul li:hover .submenu {
   display: block;
 }
