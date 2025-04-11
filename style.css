@@ -1,27 +1,24 @@
-*{
+* {
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-
 }
-.toanbo{
+
+.toanbo {
   width: auto;
-  background-color:#a81c1c ;
-  
+  background-color: #a81c1c;
 }
 
 .logo {
-  height: 80px;  
+  height: 80px;
   display: block;
   margin-bottom: -25px;
- 
- 
 }
 
 header {
   display: flex;
-  align-items: flex-end;      
+  align-items: flex-end;
   justify-content: flex-start;
   height: 80px;
   padding: 0 200px;
@@ -29,25 +26,23 @@ header {
   gap: 100px;
 }
 
-nav{
-  height: 35px ;
+nav {
+  height: 35px;
   display: flex;
-  padding-left:30px ;
   justify-content: center;
-  background-color: #a81c1c;
+  padding-left: 30px;
 }
-nav ul{
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
+
+nav ul {
+  list-style: none;
   display: flex;
   padding-left: 150px;
   gap: 10px;
 }
 
 nav ul li {
-  text-align: center;
   position: relative;
+  text-align: center;
 }
 
 nav ul a {
@@ -55,40 +50,52 @@ nav ul a {
   font-weight: bold;
   text-decoration: none;
   font-size: 14px;
-  display: block;
   line-height: 35px;
   padding: 0 10px;
-  font-family: 'Inter', sans-serif;
+  display: block;
 }
 
-nav ul a:hover{
-  background-color: chocolate;
+nav ul a:hover {
+  
   color: white;
 }
+
+/* Submenu */
 .submenu {
   display: none;
   position: absolute;
-  top: 100%; /* đặt ngay dưới thẻ cha */
+  top: 100%;
   left: 0;
-  background-color: white;
-  min-width: 300px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  right: 0;
+  width: 100vw;
+  background-color: #6B3F31;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 999;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
 }
+
+
 .submenu li a {
-  color: black;
-  padding: 10px;
+  color: white;
+  padding: 8px 16px;
   display: block;
   text-align: left;
+  font-size: 14px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.submenu li:first-child a {
+  color: chocolate;
+  font-weight: bold;
 }
 
 .submenu li a:hover {
-  background-color: #f2f2f2;
+  transform: translateX(2px);
+  color: white;
 }
 
-
+/* Hover để hiện submenu */
 nav ul li:hover .submenu {
-  display: block;
+  display: grid;
 }
-
-/*Phải sử dụng product-list nth child*/
