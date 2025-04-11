@@ -19,13 +19,52 @@
 header {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
+  justify-content: space-between;
   height: 80px;
   padding: 0 200px;
   background-color: #a81c1c;
   gap: 100px;
 }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 0; /* Vuông góc */
+  overflow: hidden;
+  height: 30px;
+}
+
+.search-box input {
+  border: none;
+  padding: 0 10px;
+  height: 100%;
+  font-size: 14px;
+}
+
+.search-box button {
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  
+}
+
+.flags {
+  display: flex;
+  gap: 10px;
+}
+
+.flag {
+  height: 20px;
+  width: 40px;
+  cursor: pointer;
+  object-fit: cover;
+}
 nav {
   height: 35px;
   display: flex;
@@ -36,8 +75,8 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  padding-left: 150px;
   gap: 10px;
+  padding-left: 150px;
 }
 
 nav ul li {
@@ -48,54 +87,66 @@ nav ul li {
 nav ul a {
   color: whitesmoke;
   font-weight: bold;
-  text-decoration: none;
   font-size: 14px;
   line-height: 35px;
+  text-decoration: none;
   padding: 0 10px;
   display: block;
+  transition: color 0.2s ease;
 }
-
 nav ul a:hover {
-  
   color: white;
 }
-
-/* Submenu */
 .submenu {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
-  width: 100vw;
+  width: 1500px;
   background-color: #6B3F31;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 999;
-  gap: 0;
-  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 150px;
+  grid-template-columns: 5fr 2fr;
+  gap: 40px;
+  margin-right: 100px;
 }
 
 
-.submenu li a {
+.submenu .col1,
+.submenu .col2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-right: 200px;
+}
+
+.submenu a {
   color: white;
-  padding: 8px 16px;
-  display: block;
-  text-align: left;
+  padding: 5px 10px;
   font-size: 14px;
+  text-decoration: none;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.submenu li:first-child a {
-  color: chocolate;
-  font-weight: bold;
-}
-
-.submenu li a:hover {
+.submenu a:hover {
   transform: translateX(2px);
-  color: white;
+  color: #fff;
 }
 
-/* Hover để hiện submenu */
 nav ul li:hover .submenu {
   display: grid;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: 700px;
+  display: block;
 }
